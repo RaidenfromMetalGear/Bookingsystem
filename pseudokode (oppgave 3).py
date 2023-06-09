@@ -63,11 +63,11 @@ def regbruker():
     mydb = dbname[database]
     mycol = mydb[collection]
     try:
-        bookrom = {
+        bruker = {
             "brukernavn" : brukernavn,
             "passord": passord 
         }
-        mycol.insert_one(bookrom)
+        mycol.insert_one(bruker)
     except Exception as e:
         print(e)
 
